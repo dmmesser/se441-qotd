@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="qotd.AttributionControllerSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-05-09T01:11:57" hostname="Daves-MacBook-Pro.local" time="3.725">
+  <properties/>
+  <testcase name="Test the index action returns the correct model" classname="qotd.AttributionControllerSpec" time="3.069"/>
+  <testcase name="Test the create action returns the correct model" classname="qotd.AttributionControllerSpec" time="0.119"/>
+  <testcase name="Test the save action correctly persists an instance" classname="qotd.AttributionControllerSpec" time="0.444"/>
+  <testcase name="Test that the show action returns the correct model" classname="qotd.AttributionControllerSpec" time="0.014"/>
+  <testcase name="Test that the edit action returns the correct model" classname="qotd.AttributionControllerSpec" time="0.01"/>
+  <testcase name="Test the update action performs an update on a valid domain instance" classname="qotd.AttributionControllerSpec" time="0.047"/>
+  <testcase name="Test that the delete action deletes an instance if it exists" classname="qotd.AttributionControllerSpec" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
