@@ -58,10 +58,6 @@ environments:
 ---
 ---
 grails:
-    plugin:
-        databasemigration:
-            updateOnStart: true
-            updateOnStartFileNames: [changelog.groovy]
     profile: web
     codegen:
         defaultPackage: qotd
