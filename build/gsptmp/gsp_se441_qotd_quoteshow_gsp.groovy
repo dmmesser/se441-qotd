@@ -56,32 +56,35 @@ expressionOut.print(flash.message)
 printHtmlPart(11)
 }
 printHtmlPart(12)
-invokeTag('display','f',22,['bean':("quote")],-1)
-printHtmlPart(12)
-createTagBody(2, {->
+expressionOut.print(this.quote?.text)
 printHtmlPart(13)
-createTagBody(3, {->
-invokeTag('message','g',25,['code':("default.button.edit.label"),'default':("Edit")],-1)
-})
-invokeTag('link','g',25,['class':("edit"),'action':("edit"),'resource':(this.quote)],3)
-printHtmlPart(14)
-expressionOut.print(message(code: 'default.button.delete.label', default: 'Delete'))
+createClosureForHtmlPart(14, 2)
+invokeTag('enabled','feature',33,['feature':("ShowAttributions")],2)
 printHtmlPart(15)
-expressionOut.print(message(code: 'default.button.delete.confirm.message', default: 'Are you sure?'))
+createTagBody(2, {->
 printHtmlPart(16)
+createTagBody(3, {->
+invokeTag('message','g',37,['code':("default.button.edit.label"),'default':("Edit")],-1)
 })
-invokeTag('form','g',28,['resource':(this.quote),'method':("DELETE")],2)
+invokeTag('link','g',37,['class':("edit"),'action':("edit"),'resource':(this.quote)],3)
 printHtmlPart(17)
-})
-invokeTag('captureBody','sitemesh',30,[:],1)
+expressionOut.print(message(code: 'default.button.delete.label', default: 'Delete'))
 printHtmlPart(18)
+expressionOut.print(message(code: 'default.button.delete.confirm.message', default: 'Are you sure?'))
+printHtmlPart(19)
+})
+invokeTag('form','g',40,['resource':(this.quote),'method':("DELETE")],2)
+printHtmlPart(20)
+})
+invokeTag('captureBody','sitemesh',42,[:],1)
+printHtmlPart(21)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459713411000L
+public static final long LAST_MODIFIED = 1462115656000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

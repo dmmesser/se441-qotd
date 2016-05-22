@@ -71,23 +71,24 @@ invokeTag('hasErrors','g',27,['bean':(this.quote)],2)
 printHtmlPart(11)
 createTagBody(2, {->
 printHtmlPart(19)
-invokeTag('all','f',30,['bean':("quote")],-1)
-printHtmlPart(20)
-invokeTag('submitButton','g',33,['name':("create"),'class':("save"),'value':(message(code: 'default.button.create.label', default: 'Create'))],-1)
+createClosureForHtmlPart(20, 3)
+invokeTag('enabled','feature',42,['feature':("ShowAttributions")],3)
 printHtmlPart(21)
-})
-invokeTag('form','g',35,['action':("save")],2)
+invokeTag('submitButton','g',45,['name':("create"),'class':("save"),'value':(message(code: 'default.button.create.label', default: 'Create'))],-1)
 printHtmlPart(22)
 })
-invokeTag('captureBody','sitemesh',37,[:],1)
+invokeTag('form','g',47,['action':("save")],2)
 printHtmlPart(23)
+})
+invokeTag('captureBody','sitemesh',49,[:],1)
+printHtmlPart(24)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459713411000L
+public static final long LAST_MODIFIED = 1462115606000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'

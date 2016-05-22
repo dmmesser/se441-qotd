@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="qotd" module="se441-qotd" revision="1.0.1-SNAPSHOT" status="integration" publication="20160417215648">
+  <info organisation="qotd" module="se441-qotd" revision="1.0.1-SNAPSHOT" status="integration" publication="20160522085324">
     <description/>
   </info>
   <configurations>
@@ -38,11 +38,13 @@
     <dependency org="org.grails.plugins" name="scaffolding" rev="" conf="compile-&gt;default"/>
     <dependency org="org.grails.plugins" name="hibernate4" rev="" conf="compile-&gt;default"/>
     <dependency org="org.hibernate" name="hibernate-ehcache" rev="" conf="compile-&gt;default"/>
+    <dependency org="org.grails.plugins" name="feature-switch" rev="1.0" conf="compile-&gt;default"/>
     <dependency org="org.grails" name="grails-console" rev="" conf="console-&gt;default"/>
     <dependency org="javax.servlet" name="javax.servlet-api" rev="3.1.0" conf="gspCompile-&gt;default"/>
     <dependency org="org.grails.profiles" name="web" rev="3.1.4" conf="profile-&gt;default"/>
     <dependency org="org.grails.plugins" name="asset-pipeline" rev="" conf="runtime-&gt;default"/>
     <dependency org="com.h2database" name="h2" rev="" conf="runtime-&gt;default"/>
+    <dependency org="org.grails.plugins" name="database-migration" rev="2.0.0.RC4" conf="runtime-&gt;default"/>
     <dependency org="org.grails" name="grails-plugin-testing" rev="" conf="testCompile-&gt;default"/>
     <dependency org="org.grails.plugins" name="geb" rev="" conf="testCompile-&gt;default"/>
     <dependency org="org.seleniumhq.selenium" name="selenium-htmlunit-driver" rev="2.47.1" conf="testRuntime-&gt;default"/>

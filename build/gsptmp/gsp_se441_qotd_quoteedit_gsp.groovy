@@ -78,23 +78,26 @@ createTagBody(2, {->
 printHtmlPart(20)
 invokeTag('hiddenField','g',30,['name':("version"),'value':(this.quote?.version)],-1)
 printHtmlPart(21)
-invokeTag('all','f',32,['bean':("quote")],-1)
+expressionOut.print(this.quote?.text)
 printHtmlPart(22)
-expressionOut.print(message(code: 'default.button.update.label', default: 'Update'))
-printHtmlPart(23)
-})
-invokeTag('form','g',37,['resource':(this.quote),'method':("PUT")],2)
+createClosureForHtmlPart(23, 3)
+invokeTag('enabled','feature',44,['feature':("ShowAttributions")],3)
 printHtmlPart(24)
-})
-invokeTag('captureBody','sitemesh',39,[:],1)
+expressionOut.print(message(code: 'default.button.update.label', default: 'Update'))
 printHtmlPart(25)
+})
+invokeTag('form','g',49,['resource':(this.quote),'method':("PUT")],2)
+printHtmlPart(26)
+})
+invokeTag('captureBody','sitemesh',51,[:],1)
+printHtmlPart(27)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1459713411000L
+public static final long LAST_MODIFIED = 1462115487000L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'none'
